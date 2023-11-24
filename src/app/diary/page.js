@@ -32,7 +32,7 @@ export default function Diary() {
       {judul.length > 0 ? (
         <ul>
           {judul.map((item, idx) => (
-            <li>
+            <li key={item.id}>
               <div className="diary-container">
                 <h1>{judul[idx]}</h1>
                 <p className="p-diary">{isiDiary[idx]}</p>
